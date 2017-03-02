@@ -20,6 +20,8 @@
 		2CBF71CC1E688AB500248B4D /* PausedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71CB1E688AB500248B4D /* PausedState.swift */; };
 		2CBF71CF1E688E9300248B4D /* EnemyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71CE1E688E9300248B4D /* EnemyType.swift */; };
 		2CBF71D21E688F3600248B4D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D11E688F3600248B4D /* Utils.swift */; };
+		2CBF71D61E6892DE00248B4D /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D51E6892DE00248B4D /* Tile.swift */; };
+		2CBF71D91E68931200248B4D /* TileMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D81E68931200248B4D /* TileMap.swift */; };
 		2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */; };
 		2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F11E54AFBF00025D8B /* GameScene.sks */; };
 		2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320F51E54AFBF00025D8B /* GameScene.swift */; };
@@ -43,6 +45,8 @@
 		2CBF71CB1E688AB500248B4D /* PausedState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PausedState.swift; sourceTree = "<group>"; };
 		2CBF71CE1E688E9300248B4D /* EnemyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyType.swift; sourceTree = "<group>"; };
 		2CBF71D11E688F3600248B4D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2CBF71D51E6892DE00248B4D /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		2CBF71D81E68931200248B4D /* TileMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMap.swift; sourceTree = "<group>"; };
 		2CD320EC1E54AFBF00025D8B /* RussiansVsZombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussiansVsZombies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD320F11E54AFBF00025D8B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -129,6 +133,31 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		2CBF71D31E68929C00248B4D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF71D71E68930700248B4D /* Model */,
+				2CBF71D41E6892D000248B4D /* Tile */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		2CBF71D41E6892D000248B4D /* Tile */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF71D51E6892DE00248B4D /* Tile.swift */,
+			);
+			name = Tile;
+			sourceTree = "<group>";
+		};
+		2CBF71D71E68930700248B4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF71D81E68931200248B4D /* TileMap.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		2CD320E31E54AFBF00025D8B = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +177,7 @@
 		2CD320EE1E54AFBF00025D8B /* RussiansVsZombies */ = {
 			isa = PBXGroup;
 			children = (
+				2CBF71D31E68929C00248B4D /* Map */,
 				2CBF71D01E688F1600248B4D /* Utils */,
 				2CBF71B41E6886B800248B4D /* Game */,
 				2CD320F71E54AFBF00025D8B /* GameViewController.swift */,
@@ -230,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBF71D61E6892DE00248B4D /* Tile.swift in Sources */,
 				2CBF71BF1E68883100248B4D /* LevelManager.swift in Sources */,
 				2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */,
 				2CBF71C61E688A2C00248B4D /* LoseState.swift in Sources */,
@@ -245,6 +276,7 @@
 				2CBF71CF1E688E9300248B4D /* EnemyType.swift in Sources */,
 				2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */,
 				2CBF71BB1E6887FB00248B4D /* LayersManager.swift in Sources */,
+				2CBF71D91E68931200248B4D /* TileMap.swift in Sources */,
 				2CBF71CC1E688AB500248B4D /* PausedState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
