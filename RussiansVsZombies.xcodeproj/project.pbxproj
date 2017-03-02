@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CBF71B71E6887AD00248B4D /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71B61E6887AC00248B4D /* GameManager.swift */; };
+		2CBF71B91E6887EA00248B4D /* WaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71B81E6887EA00248B4D /* WaveManager.swift */; };
+		2CBF71BB1E6887FB00248B4D /* LayersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71BA1E6887FB00248B4D /* LayersManager.swift */; };
+		2CBF71BD1E68881F00248B4D /* EntitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71BC1E68881F00248B4D /* EntitiesManager.swift */; };
+		2CBF71BF1E68883100248B4D /* LevelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71BE1E68883100248B4D /* LevelManager.swift */; };
 		2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */; };
 		2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F11E54AFBF00025D8B /* GameScene.sks */; };
 		2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320F51E54AFBF00025D8B /* GameScene.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CBF71B61E6887AC00248B4D /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		2CBF71B81E6887EA00248B4D /* WaveManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveManager.swift; sourceTree = "<group>"; };
+		2CBF71BA1E6887FB00248B4D /* LayersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayersManager.swift; sourceTree = "<group>"; };
+		2CBF71BC1E68881F00248B4D /* EntitiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitiesManager.swift; sourceTree = "<group>"; };
+		2CBF71BE1E68883100248B4D /* LevelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelManager.swift; sourceTree = "<group>"; };
 		2CD320EC1E54AFBF00025D8B /* RussiansVsZombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussiansVsZombies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD320F11E54AFBF00025D8B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -53,10 +63,23 @@
 		2CBF71B41E6886B800248B4D /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				2CBF71B51E68879300248B4D /* Managers */,
 				2CD320F11E54AFBF00025D8B /* GameScene.sks */,
 				2CD320F51E54AFBF00025D8B /* GameScene.swift */,
 			);
 			name = Game;
+			sourceTree = "<group>";
+		};
+		2CBF71B51E68879300248B4D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF71B61E6887AC00248B4D /* GameManager.swift */,
+				2CBF71B81E6887EA00248B4D /* WaveManager.swift */,
+				2CBF71BA1E6887FB00248B4D /* LayersManager.swift */,
+				2CBF71BC1E68881F00248B4D /* EntitiesManager.swift */,
+				2CBF71BE1E68883100248B4D /* LevelManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		2CD320E31E54AFBF00025D8B = {
@@ -159,9 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBF71BF1E68883100248B4D /* LevelManager.swift in Sources */,
 				2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */,
+				2CBF71B71E6887AD00248B4D /* GameManager.swift in Sources */,
+				2CBF71B91E6887EA00248B4D /* WaveManager.swift in Sources */,
 				2CD320F81E54AFBF00025D8B /* GameViewController.swift in Sources */,
+				2CBF71BD1E68881F00248B4D /* EntitiesManager.swift in Sources */,
 				2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */,
+				2CBF71BB1E6887FB00248B4D /* LayersManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
