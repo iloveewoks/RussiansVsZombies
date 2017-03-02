@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */; };
 		2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F11E54AFBF00025D8B /* GameScene.sks */; };
-		2CD320F41E54AFBF00025D8B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F31E54AFBF00025D8B /* Actions.sks */; };
 		2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320F51E54AFBF00025D8B /* GameScene.swift */; };
 		2CD320F81E54AFBF00025D8B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320F71E54AFBF00025D8B /* GameViewController.swift */; };
 		2CD320FB1E54AFBF00025D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F91E54AFBF00025D8B /* Main.storyboard */; };
@@ -21,7 +20,6 @@
 		2CD320EC1E54AFBF00025D8B /* RussiansVsZombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussiansVsZombies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD320F11E54AFBF00025D8B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		2CD320F31E54AFBF00025D8B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		2CD320F51E54AFBF00025D8B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2CD320F71E54AFBF00025D8B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2CD320FA1E54AFBF00025D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +39,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CBF71B31E68865900248B4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */,
+				2CD320F91E54AFBF00025D8B /* Main.storyboard */,
+				2CD320FE1E54AFBF00025D8B /* LaunchScreen.storyboard */,
+				2CD321011E54AFBF00025D8B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CBF71B41E6886B800248B4D /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				2CD320F11E54AFBF00025D8B /* GameScene.sks */,
+				2CD320F51E54AFBF00025D8B /* GameScene.swift */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
 		2CD320E31E54AFBF00025D8B = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +78,10 @@
 		2CD320EE1E54AFBF00025D8B /* RussiansVsZombies */ = {
 			isa = PBXGroup;
 			children = (
-				2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */,
-				2CD320F11E54AFBF00025D8B /* GameScene.sks */,
-				2CD320F31E54AFBF00025D8B /* Actions.sks */,
-				2CD320F51E54AFBF00025D8B /* GameScene.swift */,
+				2CBF71B41E6886B800248B4D /* Game */,
 				2CD320F71E54AFBF00025D8B /* GameViewController.swift */,
-				2CD320F91E54AFBF00025D8B /* Main.storyboard */,
 				2CD320FC1E54AFBF00025D8B /* Assets.xcassets */,
-				2CD320FE1E54AFBF00025D8B /* LaunchScreen.storyboard */,
-				2CD321011E54AFBF00025D8B /* Info.plist */,
+				2CBF71B31E68865900248B4D /* Supporting Files */,
 			);
 			path = RussiansVsZombies;
 			sourceTree = "<group>";
@@ -136,7 +149,6 @@
 				2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */,
 				2CD320FD1E54AFBF00025D8B /* Assets.xcassets in Resources */,
 				2CD321001E54AFBF00025D8B /* LaunchScreen.storyboard in Resources */,
-				2CD320F41E54AFBF00025D8B /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
