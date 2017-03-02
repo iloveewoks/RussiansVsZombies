@@ -18,7 +18,7 @@
 		2CBF71C81E688A5300248B4D /* ReadyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71C71E688A5300248B4D /* ReadyState.swift */; };
 		2CBF71CA1E688A9300248B4D /* WinState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71C91E688A9300248B4D /* WinState.swift */; };
 		2CBF71CC1E688AB500248B4D /* PausedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71CB1E688AB500248B4D /* PausedState.swift */; };
-		2CBF71CF1E688E9300248B4D /* EnemyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71CE1E688E9300248B4D /* EnemyType.swift */; };
+		2CBF71CF1E688E9300248B4D /* EnemyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71CE1E688E9300248B4D /* EnemyEntity.swift */; };
 		2CBF71D21E688F3600248B4D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D11E688F3600248B4D /* Utils.swift */; };
 		2CBF71D61E6892DE00248B4D /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D51E6892DE00248B4D /* Tile.swift */; };
 		2CBF71D91E68931200248B4D /* TileMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D81E68931200248B4D /* TileMap.swift */; };
@@ -27,6 +27,13 @@
 		2CBF71DF1E6894C500248B4D /* TileSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71DE1E6894C500248B4D /* TileSet.swift */; };
 		2CBF71E21E68957B00248B4D /* TilemapLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71E11E68957B00248B4D /* TilemapLayer.swift */; };
 		2CBF71E41E68961800248B4D /* GridLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71E31E68961800248B4D /* GridLayer.swift */; };
+		2CBF71E71E68AD0F00248B4D /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71E61E68AD0F00248B4D /* SpriteComponent.swift */; };
+		2CBF71E91E68AD4B00248B4D /* ShadowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71E81E68AD4B00248B4D /* ShadowComponent.swift */; };
+		2CBF71EB1E68AD6500248B4D /* HealthComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71EA1E68AD6500248B4D /* HealthComponent.swift */; };
+		2CBF71ED1E68AD9900248B4D /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71EC1E68AD9900248B4D /* AnimationComponent.swift */; };
+		2CBF71EF1E68ADB000248B4D /* FiringComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71EE1E68ADB000248B4D /* FiringComponent.swift */; };
+		2CBF71F11E68AE0A00248B4D /* MoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71F01E68AE0A00248B4D /* MoveComponent.swift */; };
+		2CBF71F31E68AE3300248B4D /* DamagingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71F21E68AE3300248B4D /* DamagingComponent.swift */; };
 		2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */; };
 		2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F11E54AFBF00025D8B /* GameScene.sks */; };
 		2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320F51E54AFBF00025D8B /* GameScene.swift */; };
@@ -48,7 +55,7 @@
 		2CBF71C71E688A5300248B4D /* ReadyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyState.swift; sourceTree = "<group>"; };
 		2CBF71C91E688A9300248B4D /* WinState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinState.swift; sourceTree = "<group>"; };
 		2CBF71CB1E688AB500248B4D /* PausedState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PausedState.swift; sourceTree = "<group>"; };
-		2CBF71CE1E688E9300248B4D /* EnemyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyType.swift; sourceTree = "<group>"; };
+		2CBF71CE1E688E9300248B4D /* EnemyEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyEntity.swift; sourceTree = "<group>"; };
 		2CBF71D11E688F3600248B4D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		2CBF71D51E6892DE00248B4D /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		2CBF71D81E68931200248B4D /* TileMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMap.swift; sourceTree = "<group>"; };
@@ -57,6 +64,13 @@
 		2CBF71DE1E6894C500248B4D /* TileSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileSet.swift; sourceTree = "<group>"; };
 		2CBF71E11E68957B00248B4D /* TilemapLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TilemapLayer.swift; sourceTree = "<group>"; };
 		2CBF71E31E68961800248B4D /* GridLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayer.swift; sourceTree = "<group>"; };
+		2CBF71E61E68AD0F00248B4D /* SpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		2CBF71E81E68AD4B00248B4D /* ShadowComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowComponent.swift; sourceTree = "<group>"; };
+		2CBF71EA1E68AD6500248B4D /* HealthComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthComponent.swift; sourceTree = "<group>"; };
+		2CBF71EC1E68AD9900248B4D /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
+		2CBF71EE1E68ADB000248B4D /* FiringComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiringComponent.swift; sourceTree = "<group>"; };
+		2CBF71F01E68AE0A00248B4D /* MoveComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveComponent.swift; sourceTree = "<group>"; };
+		2CBF71F21E68AE3300248B4D /* DamagingComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamagingComponent.swift; sourceTree = "<group>"; };
 		2CD320EC1E54AFBF00025D8B /* RussiansVsZombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussiansVsZombies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD320F11E54AFBF00025D8B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -93,6 +107,7 @@
 		2CBF71B41E6886B800248B4D /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				2CBF71E51E68ACED00248B4D /* Components */,
 				2CBF71D31E68929C00248B4D /* Map */,
 				2CBF71CD1E688E8300248B4D /* Entities */,
 				2CBF71C01E68895000248B4D /* States */,
@@ -131,7 +146,7 @@
 		2CBF71CD1E688E8300248B4D /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				2CBF71CE1E688E9300248B4D /* EnemyType.swift */,
+				2CBF71CE1E688E9300248B4D /* EnemyEntity.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -180,6 +195,20 @@
 				2CBF71E31E68961800248B4D /* GridLayer.swift */,
 			);
 			name = Layers;
+			sourceTree = "<group>";
+		};
+		2CBF71E51E68ACED00248B4D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF71E61E68AD0F00248B4D /* SpriteComponent.swift */,
+				2CBF71E81E68AD4B00248B4D /* ShadowComponent.swift */,
+				2CBF71EA1E68AD6500248B4D /* HealthComponent.swift */,
+				2CBF71EC1E68AD9900248B4D /* AnimationComponent.swift */,
+				2CBF71EE1E68ADB000248B4D /* FiringComponent.swift */,
+				2CBF71F01E68AE0A00248B4D /* MoveComponent.swift */,
+				2CBF71F21E68AE3300248B4D /* DamagingComponent.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 		2CD320E31E54AFBF00025D8B = {
@@ -284,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBF71D61E6892DE00248B4D /* Tile.swift in Sources */,
+				2CBF71F11E68AE0A00248B4D /* MoveComponent.swift in Sources */,
 				2CBF71DF1E6894C500248B4D /* TileSet.swift in Sources */,
 				2CBF71BF1E68883100248B4D /* LevelManager.swift in Sources */,
 				2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */,
@@ -291,16 +321,22 @@
 				2CBF71B71E6887AD00248B4D /* GameManager.swift in Sources */,
 				2CBF71B91E6887EA00248B4D /* WaveManager.swift in Sources */,
 				2CBF71CA1E688A9300248B4D /* WinState.swift in Sources */,
+				2CBF71E91E68AD4B00248B4D /* ShadowComponent.swift in Sources */,
 				2CD320F81E54AFBF00025D8B /* GameViewController.swift in Sources */,
+				2CBF71EF1E68ADB000248B4D /* FiringComponent.swift in Sources */,
 				2CBF71D21E688F3600248B4D /* Utils.swift in Sources */,
+				2CBF71F31E68AE3300248B4D /* DamagingComponent.swift in Sources */,
+				2CBF71E71E68AD0F00248B4D /* SpriteComponent.swift in Sources */,
+				2CBF71ED1E68AD9900248B4D /* AnimationComponent.swift in Sources */,
 				2CBF71DD1E68945F00248B4D /* Viewport.swift in Sources */,
 				2CBF71C21E68899B00248B4D /* State.swift in Sources */,
 				2CBF71BD1E68881F00248B4D /* EntitiesManager.swift in Sources */,
 				2CBF71C41E6889BD00248B4D /* ActiveState.swift in Sources */,
 				2CBF71C81E688A5300248B4D /* ReadyState.swift in Sources */,
+				2CBF71EB1E68AD6500248B4D /* HealthComponent.swift in Sources */,
 				2CBF71E41E68961800248B4D /* GridLayer.swift in Sources */,
 				2CBF71DB1E6893BA00248B4D /* ISOTileMap.swift in Sources */,
-				2CBF71CF1E688E9300248B4D /* EnemyType.swift in Sources */,
+				2CBF71CF1E688E9300248B4D /* EnemyEntity.swift in Sources */,
 				2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */,
 				2CBF71BB1E6887FB00248B4D /* LayersManager.swift in Sources */,
 				2CBF71D91E68931200248B4D /* TileMap.swift in Sources */,
