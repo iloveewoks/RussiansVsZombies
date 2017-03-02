@@ -22,6 +22,16 @@ extension float2 {
 }
 
 
+// Rotate node to face another node
+func rotateToFaceNode(targetNode: SKNode, sourceNode: SKNode) -> CGFloat {
+    return (atan2(targetNode.position.y - sourceNode.position.y, targetNode.position.x - sourceNode.position.x) - CGFloat(M_PI/2))
+}
+
+func rotateToFacePosition(targetPosition: CGPoint, sourceNode: SKNode) -> CGFloat {
+    return (atan2(targetPosition.y - sourceNode.position.y, targetPosition.x - sourceNode.position.x) - CGFloat(M_PI/2))
+}
+
+
 func delay(delay:Double, closure:@escaping ()->()) {
     DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
         closure()
