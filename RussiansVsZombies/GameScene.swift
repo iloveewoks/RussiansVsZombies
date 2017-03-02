@@ -20,8 +20,9 @@ class GameScene: SKScene {
     var lastUpdateTime: TimeInterval = 0
     
     var gameManager: GameManager!
+    var levelManager: LevelManager!
     
-    
+    var gameCamera = SKCameraNode()
     
     /*
      =====================================================================================
@@ -33,6 +34,11 @@ class GameScene: SKScene {
         super.didMove(to: view)
         
         gameManager = GameManager.sharedInstance
+        
+        gameCamera = childNode(withName: "MainCamera") as! SKCameraNode
+        camera = gameCamera
+        
+        
         
         gameManager.set(scene: self)
         
@@ -56,5 +62,16 @@ class GameScene: SKScene {
             gameManager.stateMachine.enter(LoseState.self)
         }
         
+    }
+    
+    /*
+     =====================================================================================
+     MARK: Touches Handler
+     =====================================================================================
+     */
+    
+    // Camera Movement
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        levelManager!.touchesMoved(touches, with: event)
     }
 }
