@@ -23,6 +23,10 @@
 		2CBF71D61E6892DE00248B4D /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D51E6892DE00248B4D /* Tile.swift */; };
 		2CBF71D91E68931200248B4D /* TileMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D81E68931200248B4D /* TileMap.swift */; };
 		2CBF71DB1E6893BA00248B4D /* ISOTileMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71DA1E6893BA00248B4D /* ISOTileMap.swift */; };
+		2CBF71DD1E68945F00248B4D /* Viewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71DC1E68945F00248B4D /* Viewport.swift */; };
+		2CBF71DF1E6894C500248B4D /* TileSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71DE1E6894C500248B4D /* TileSet.swift */; };
+		2CBF71E21E68957B00248B4D /* TilemapLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71E11E68957B00248B4D /* TilemapLayer.swift */; };
+		2CBF71E41E68961800248B4D /* GridLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71E31E68961800248B4D /* GridLayer.swift */; };
 		2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */; };
 		2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F11E54AFBF00025D8B /* GameScene.sks */; };
 		2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320F51E54AFBF00025D8B /* GameScene.swift */; };
@@ -49,6 +53,10 @@
 		2CBF71D51E6892DE00248B4D /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		2CBF71D81E68931200248B4D /* TileMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMap.swift; sourceTree = "<group>"; };
 		2CBF71DA1E6893BA00248B4D /* ISOTileMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISOTileMap.swift; sourceTree = "<group>"; };
+		2CBF71DC1E68945F00248B4D /* Viewport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewport.swift; sourceTree = "<group>"; };
+		2CBF71DE1E6894C500248B4D /* TileSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileSet.swift; sourceTree = "<group>"; };
+		2CBF71E11E68957B00248B4D /* TilemapLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TilemapLayer.swift; sourceTree = "<group>"; };
+		2CBF71E31E68961800248B4D /* GridLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayer.swift; sourceTree = "<group>"; };
 		2CD320EC1E54AFBF00025D8B /* RussiansVsZombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussiansVsZombies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD320F11E54AFBF00025D8B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -85,6 +93,7 @@
 		2CBF71B41E6886B800248B4D /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				2CBF71D31E68929C00248B4D /* Map */,
 				2CBF71CD1E688E8300248B4D /* Entities */,
 				2CBF71C01E68895000248B4D /* States */,
 				2CBF71B51E68879300248B4D /* Managers */,
@@ -138,8 +147,10 @@
 		2CBF71D31E68929C00248B4D /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				2CBF71E01E68953E00248B4D /* Layers */,
 				2CBF71D71E68930700248B4D /* Model */,
 				2CBF71D41E6892D000248B4D /* Tile */,
+				2CBF71DC1E68945F00248B4D /* Viewport.swift */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -148,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				2CBF71D51E6892DE00248B4D /* Tile.swift */,
+				2CBF71DE1E6894C500248B4D /* TileSet.swift */,
 			);
 			name = Tile;
 			sourceTree = "<group>";
@@ -159,6 +171,15 @@
 				2CBF71DA1E6893BA00248B4D /* ISOTileMap.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2CBF71E01E68953E00248B4D /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF71E11E68957B00248B4D /* TilemapLayer.swift */,
+				2CBF71E31E68961800248B4D /* GridLayer.swift */,
+			);
+			name = Layers;
 			sourceTree = "<group>";
 		};
 		2CD320E31E54AFBF00025D8B = {
@@ -180,7 +201,6 @@
 		2CD320EE1E54AFBF00025D8B /* RussiansVsZombies */ = {
 			isa = PBXGroup;
 			children = (
-				2CBF71D31E68929C00248B4D /* Map */,
 				2CBF71D01E688F1600248B4D /* Utils */,
 				2CBF71B41E6886B800248B4D /* Game */,
 				2CD320F71E54AFBF00025D8B /* GameViewController.swift */,
@@ -264,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBF71D61E6892DE00248B4D /* Tile.swift in Sources */,
+				2CBF71DF1E6894C500248B4D /* TileSet.swift in Sources */,
 				2CBF71BF1E68883100248B4D /* LevelManager.swift in Sources */,
 				2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */,
 				2CBF71C61E688A2C00248B4D /* LoseState.swift in Sources */,
@@ -272,15 +293,18 @@
 				2CBF71CA1E688A9300248B4D /* WinState.swift in Sources */,
 				2CD320F81E54AFBF00025D8B /* GameViewController.swift in Sources */,
 				2CBF71D21E688F3600248B4D /* Utils.swift in Sources */,
+				2CBF71DD1E68945F00248B4D /* Viewport.swift in Sources */,
 				2CBF71C21E68899B00248B4D /* State.swift in Sources */,
 				2CBF71BD1E68881F00248B4D /* EntitiesManager.swift in Sources */,
 				2CBF71C41E6889BD00248B4D /* ActiveState.swift in Sources */,
 				2CBF71C81E688A5300248B4D /* ReadyState.swift in Sources */,
+				2CBF71E41E68961800248B4D /* GridLayer.swift in Sources */,
 				2CBF71DB1E6893BA00248B4D /* ISOTileMap.swift in Sources */,
 				2CBF71CF1E688E9300248B4D /* EnemyType.swift in Sources */,
 				2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */,
 				2CBF71BB1E6887FB00248B4D /* LayersManager.swift in Sources */,
 				2CBF71D91E68931200248B4D /* TileMap.swift in Sources */,
+				2CBF71E21E68957B00248B4D /* TilemapLayer.swift in Sources */,
 				2CBF71CC1E688AB500248B4D /* PausedState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
