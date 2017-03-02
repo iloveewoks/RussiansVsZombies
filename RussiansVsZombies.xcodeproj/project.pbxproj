@@ -36,6 +36,8 @@
 		2CBF71F31E68AE3300248B4D /* DamagingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71F21E68AE3300248B4D /* DamagingComponent.swift */; };
 		2CBF71F51E68B84F00248B4D /* TowerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71F41E68B84F00248B4D /* TowerEntity.swift */; };
 		2CBF71F71E68BF7A00248B4D /* ProjectileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71F61E68BF7A00248B4D /* ProjectileEntity.swift */; };
+		2CBF71F91E68C5FD00248B4D /* TowerSelectorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71F81E68C5FD00248B4D /* TowerSelectorNode.swift */; };
+		2CBF71FB1E68C65500248B4D /* TowerSelector.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF71FA1E68C65500248B4D /* TowerSelector.sks */; };
 		2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */; };
 		2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F11E54AFBF00025D8B /* GameScene.sks */; };
 		2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320F51E54AFBF00025D8B /* GameScene.swift */; };
@@ -75,6 +77,8 @@
 		2CBF71F21E68AE3300248B4D /* DamagingComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamagingComponent.swift; sourceTree = "<group>"; };
 		2CBF71F41E68B84F00248B4D /* TowerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerEntity.swift; sourceTree = "<group>"; };
 		2CBF71F61E68BF7A00248B4D /* ProjectileEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectileEntity.swift; sourceTree = "<group>"; };
+		2CBF71F81E68C5FD00248B4D /* TowerSelectorNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerSelectorNode.swift; sourceTree = "<group>"; };
+		2CBF71FA1E68C65500248B4D /* TowerSelector.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TowerSelector.sks; sourceTree = "<group>"; };
 		2CD320EC1E54AFBF00025D8B /* RussiansVsZombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussiansVsZombies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD320F11E54AFBF00025D8B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -150,9 +154,11 @@
 		2CBF71CD1E688E8300248B4D /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				2CBF71FA1E68C65500248B4D /* TowerSelector.sks */,
 				2CBF71CE1E688E9300248B4D /* EnemyEntity.swift */,
 				2CBF71F41E68B84F00248B4D /* TowerEntity.swift */,
 				2CBF71F61E68BF7A00248B4D /* ProjectileEntity.swift */,
+				2CBF71F81E68C5FD00248B4D /* TowerSelectorNode.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBF71FB1E68C65500248B4D /* TowerSelector.sks in Resources */,
 				2CD320FB1E54AFBF00025D8B /* Main.storyboard in Resources */,
 				2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */,
 				2CD320FD1E54AFBF00025D8B /* Assets.xcassets in Resources */,
@@ -344,6 +351,7 @@
 				2CBF71E41E68961800248B4D /* GridLayer.swift in Sources */,
 				2CBF71DB1E6893BA00248B4D /* ISOTileMap.swift in Sources */,
 				2CBF71CF1E688E9300248B4D /* EnemyEntity.swift in Sources */,
+				2CBF71F91E68C5FD00248B4D /* TowerSelectorNode.swift in Sources */,
 				2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */,
 				2CBF71BB1E6887FB00248B4D /* LayersManager.swift in Sources */,
 				2CBF71D91E68931200248B4D /* TileMap.swift in Sources */,
