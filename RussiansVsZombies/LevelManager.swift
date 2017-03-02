@@ -1,9 +1,19 @@
-//
-//  LevelManager.swift
-//  RussiansVsZombies
-//
-//  Created by Dmitriy Kapitun on 02/03/17.
-//  Copyright © 2017 Dmitriy Kapitun. All rights reserved.
-//
+import UIKit
 
-import Foundation
+import SpriteKit
+import GameplayKit
+
+class GameManager {
+    
+    var scene: GameScene?
+    
+    static let sharedInstance: GameManager = GameManager()
+    
+    init(){
+        
+    }
+    
+    func set(scene:GameScene){
+        self.scene = scene
+    }
+}
