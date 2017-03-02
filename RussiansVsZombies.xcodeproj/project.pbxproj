@@ -22,6 +22,7 @@
 		2CBF71D21E688F3600248B4D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D11E688F3600248B4D /* Utils.swift */; };
 		2CBF71D61E6892DE00248B4D /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D51E6892DE00248B4D /* Tile.swift */; };
 		2CBF71D91E68931200248B4D /* TileMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71D81E68931200248B4D /* TileMap.swift */; };
+		2CBF71DB1E6893BA00248B4D /* ISOTileMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71DA1E6893BA00248B4D /* ISOTileMap.swift */; };
 		2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */; };
 		2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F11E54AFBF00025D8B /* GameScene.sks */; };
 		2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320F51E54AFBF00025D8B /* GameScene.swift */; };
@@ -47,6 +48,7 @@
 		2CBF71D11E688F3600248B4D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		2CBF71D51E6892DE00248B4D /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		2CBF71D81E68931200248B4D /* TileMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMap.swift; sourceTree = "<group>"; };
+		2CBF71DA1E6893BA00248B4D /* ISOTileMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISOTileMap.swift; sourceTree = "<group>"; };
 		2CD320EC1E54AFBF00025D8B /* RussiansVsZombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussiansVsZombies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD320F11E54AFBF00025D8B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				2CBF71D81E68931200248B4D /* TileMap.swift */,
+				2CBF71DA1E6893BA00248B4D /* ISOTileMap.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				2CBF71BD1E68881F00248B4D /* EntitiesManager.swift in Sources */,
 				2CBF71C41E6889BD00248B4D /* ActiveState.swift in Sources */,
 				2CBF71C81E688A5300248B4D /* ReadyState.swift in Sources */,
+				2CBF71DB1E6893BA00248B4D /* ISOTileMap.swift in Sources */,
 				2CBF71CF1E688E9300248B4D /* EnemyType.swift in Sources */,
 				2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */,
 				2CBF71BB1E6887FB00248B4D /* LayersManager.swift in Sources */,
