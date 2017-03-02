@@ -38,7 +38,7 @@ class GameScene: SKScene {
         gameCamera = childNode(withName: "MainCamera") as! SKCameraNode
         camera = gameCamera
         
-        
+        levelManager = LevelManager(viewportISO: childNode(withName: "ISOMap") as! Viewport, gameCamera: gameCamera)
         
         gameManager.set(scene: self)
         
@@ -52,6 +52,22 @@ class GameScene: SKScene {
      =====================================================================================
      */
     override func update(_ currentTime: TimeInterval) {
+        // Initialize _lastUpdateTime if it has not already been
+        if (lastUpdateTime == 0) {
+            lastUpdateTime = currentTime
+        }
+        
+        // Calculate time since last update
+        let dt = currentTime - lastUpdateTime
+        
+        if (levelManager.viewportISO.isPaused){
+            return
+        }
+        
+        // Update
+        levelManager.update(deltaTime: dt)
+        
+        self.lastUpdateTime = currentTime
         
         if (gameManager.stateMachine.currentState is WinState){
             //WIN
@@ -61,7 +77,15 @@ class GameScene: SKScene {
             //LOSE
             gameManager.stateMachine.enter(LoseState.self)
         }
+    }
+    
+    
+    override func didFinishUpdate() {
+        if (levelManager.viewportISO.isPaused){
+            return
+        }
         
+        levelManager.didFinishUpdate()
     }
     
     /*
