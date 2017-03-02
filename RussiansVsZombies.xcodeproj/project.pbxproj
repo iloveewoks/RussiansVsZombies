@@ -12,6 +12,12 @@
 		2CBF71BB1E6887FB00248B4D /* LayersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71BA1E6887FB00248B4D /* LayersManager.swift */; };
 		2CBF71BD1E68881F00248B4D /* EntitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71BC1E68881F00248B4D /* EntitiesManager.swift */; };
 		2CBF71BF1E68883100248B4D /* LevelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71BE1E68883100248B4D /* LevelManager.swift */; };
+		2CBF71C21E68899B00248B4D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71C11E68899B00248B4D /* State.swift */; };
+		2CBF71C41E6889BD00248B4D /* ActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71C31E6889BD00248B4D /* ActiveState.swift */; };
+		2CBF71C61E688A2C00248B4D /* LoseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71C51E688A2C00248B4D /* LoseState.swift */; };
+		2CBF71C81E688A5300248B4D /* ReadyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71C71E688A5300248B4D /* ReadyState.swift */; };
+		2CBF71CA1E688A9300248B4D /* WinState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71C91E688A9300248B4D /* WinState.swift */; };
+		2CBF71CC1E688AB500248B4D /* PausedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF71CB1E688AB500248B4D /* PausedState.swift */; };
 		2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */; };
 		2CD320F21E54AFBF00025D8B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CD320F11E54AFBF00025D8B /* GameScene.sks */; };
 		2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD320F51E54AFBF00025D8B /* GameScene.swift */; };
@@ -27,6 +33,12 @@
 		2CBF71BA1E6887FB00248B4D /* LayersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayersManager.swift; sourceTree = "<group>"; };
 		2CBF71BC1E68881F00248B4D /* EntitiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitiesManager.swift; sourceTree = "<group>"; };
 		2CBF71BE1E68883100248B4D /* LevelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelManager.swift; sourceTree = "<group>"; };
+		2CBF71C11E68899B00248B4D /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		2CBF71C31E6889BD00248B4D /* ActiveState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveState.swift; sourceTree = "<group>"; };
+		2CBF71C51E688A2C00248B4D /* LoseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseState.swift; sourceTree = "<group>"; };
+		2CBF71C71E688A5300248B4D /* ReadyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyState.swift; sourceTree = "<group>"; };
+		2CBF71C91E688A9300248B4D /* WinState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinState.swift; sourceTree = "<group>"; };
+		2CBF71CB1E688AB500248B4D /* PausedState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PausedState.swift; sourceTree = "<group>"; };
 		2CD320EC1E54AFBF00025D8B /* RussiansVsZombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussiansVsZombies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD320EF1E54AFBF00025D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD320F11E54AFBF00025D8B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -63,6 +75,7 @@
 		2CBF71B41E6886B800248B4D /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				2CBF71C01E68895000248B4D /* States */,
 				2CBF71B51E68879300248B4D /* Managers */,
 				2CD320F11E54AFBF00025D8B /* GameScene.sks */,
 				2CD320F51E54AFBF00025D8B /* GameScene.swift */,
@@ -80,6 +93,19 @@
 				2CBF71BE1E68883100248B4D /* LevelManager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		2CBF71C01E68895000248B4D /* States */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF71C11E68899B00248B4D /* State.swift */,
+				2CBF71C31E6889BD00248B4D /* ActiveState.swift */,
+				2CBF71C51E688A2C00248B4D /* LoseState.swift */,
+				2CBF71C71E688A5300248B4D /* ReadyState.swift */,
+				2CBF71C91E688A9300248B4D /* WinState.swift */,
+				2CBF71CB1E688AB500248B4D /* PausedState.swift */,
+			);
+			name = States;
 			sourceTree = "<group>";
 		};
 		2CD320E31E54AFBF00025D8B = {
@@ -184,12 +210,18 @@
 			files = (
 				2CBF71BF1E68883100248B4D /* LevelManager.swift in Sources */,
 				2CD320F61E54AFBF00025D8B /* GameScene.swift in Sources */,
+				2CBF71C61E688A2C00248B4D /* LoseState.swift in Sources */,
 				2CBF71B71E6887AD00248B4D /* GameManager.swift in Sources */,
 				2CBF71B91E6887EA00248B4D /* WaveManager.swift in Sources */,
+				2CBF71CA1E688A9300248B4D /* WinState.swift in Sources */,
 				2CD320F81E54AFBF00025D8B /* GameViewController.swift in Sources */,
+				2CBF71C21E68899B00248B4D /* State.swift in Sources */,
 				2CBF71BD1E68881F00248B4D /* EntitiesManager.swift in Sources */,
+				2CBF71C41E6889BD00248B4D /* ActiveState.swift in Sources */,
+				2CBF71C81E688A5300248B4D /* ReadyState.swift in Sources */,
 				2CD320F01E54AFBF00025D8B /* AppDelegate.swift in Sources */,
 				2CBF71BB1E6887FB00248B4D /* LayersManager.swift in Sources */,
+				2CBF71CC1E688AB500248B4D /* PausedState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
